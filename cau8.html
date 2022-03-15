@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function game() {
+        let a = parseInt(prompt('Nhap khoang bat dau : '));
+        let b = parseInt(prompt('Nhap khoang ket thuc : '));
+        let c = Math.floor(Math.random() * (b-a) + a);
+        for (let i=0 ;i<3 ;i ++) {
+            let d = prompt("Nhap so ban thich : ") ;
+            if (d==c) {
+                alert('Win');
+                break;
+            } else if (d<c) {
+                alert('so nho hon !');
+            } else {
+                alert('so lon hon !') ;
+            }
+        }
+    }
+</script>
+</body>
+</html>
